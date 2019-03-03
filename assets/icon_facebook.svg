@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-fb-simple</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-626.000000, -4084.000000)">
+        <g id="logo-fb-simple" transform="translate(626.000000, 4084.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M2.116051,12 L2.1,6.75 L0,6.75 L0,4.5 L2.1,4.5 L2.1,3 C2.1,0.9756 3.270057,0 4.955566,0 C5.762939,0 6.456842,0.0644025 6.659058,0.0931875 L6.659058,2.2088025 L5.490072,2.2093725 C4.573401,2.2093725 4.395909,2.676075 4.395909,3.36093 L4.395909,4.5 L7,4.5 L6.3,6.75 L4.395902,6.75 L4.395902,12 L2.116051,12 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
