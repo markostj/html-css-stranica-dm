@@ -8,7 +8,6 @@ html {
   font-size: 16px;
 }
 
-
 .hero {
   display: flex;
   position: relative;
@@ -17,17 +16,17 @@ html {
   background-image: url("assets/header_visual.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 }
 .header {
   display: flex;
   justify-content: space-between;
-  position:absolute;
-  padding:10px 30px;
+  position: absolute;
+  padding: 10px 30px;
   top: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
 }
 .nav__list {
   display: flex;
@@ -46,27 +45,82 @@ html {
   text-align: center;
   color: white;
 }
-.hero__content__h1{
-    padding:20px;
-    font-weight: normal;
+.hero__content__h1 {
+  padding: 20px;
+  font-weight: normal;
 }
-.button{
-    border:0;
-    color:white;
-    text-transform: uppercase;
-    padding:10px 30px;
-    font-size:0.5rem;
+.button {
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  font-size: 0.5rem;
 }
-.hero__button__primary{
-    background-color:#f0795e;
+.hero__button__primary {
+  background-color: #f0795e;
 }
-.hero__button__secondary{
-    background-color:transparent;
-    border:1px solid #fff;
-    width:128px;
+.hero__button__secondary {
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 128px;
 }
-.hero__content .button + .button{
-    margin-left:20px;
+.hero__content .button + .button {
+  margin-left: 20px;
 }
 
 
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.introduction .wrapper {
+ height:400px;
+  display: flex;
+  justify-content: space-between;
+}
+.introduction__text {
+  padding-right: 100px;
+  padding-top:50px;
+}
+.introduction__title {
+  font-size: 2rem;
+}
+.introduction__paragraph {
+  font-size: 0.8125rem;
+  color: grey;
+}
+.introduction__pic {
+  max-height: 400px;
+  position:relative;
+  right:0;
+  bottom:-85px;
+}
+
+
+
+.features {
+  background-color: #f9f6ef;
+  padding-top: 60px;
+}
+.features__title {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+.features__main {
+  display: flex;
+}
+.features__content + .features__content {
+  margin-left: 50px;
+}
+.content__logo {
+  margin-bottom: 20px;
+}
+.content__title {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+.content__paragraph {
+  color: grey;
+  font-size: 0.8125rem;
+}
