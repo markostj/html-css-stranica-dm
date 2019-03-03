@@ -25,7 +25,7 @@
             </g>
             <g id="DROP">
                 <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
-                <use fill="black" fill-opacity="1" xlink:href="#path-4"></use>
+                <use fill="#FFF" fill-opacity="1" xlink:href="#path-4"></use>
             </g>
         </g>
     </g>
