@@ -171,3 +171,62 @@ html {
     border:3px solid #fff;
     border-radius:30px;
 }
+
+
+
+
+.pricing{
+    background-color:#f9f6ef;
+}
+.pricing .wrapper{
+    display:flex;
+    flex-wrap: wrap;
+}
+.pricing__heading{
+    font-size: 2rem;
+    width:50%;
+}
+.pricing__paragraph{
+    color:grey;
+    width:50%;
+}
+.plan__primary{
+    color:grey;
+    background-color: white;
+    padding:20px;
+    width:50%;
+}
+.plan__title{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(221, 217, 217);
+}
+.plan__heading{
+    font-weight: normal;
+}
+.plan__price{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:rgb(77, 75, 75);
+}
+.bold{
+    display:inline-block;
+    font-weight:bold;
+    margin:0px;
+}
+.pricing__button{
+    background-color:#fff;
+    color:#f0795e;
+    margin-top: 20px;
+    padding:10px 150px;
+    font-size:0.6875rem;
+}
+.pricing__primary{
+    border:2px solid #f0795e;
+}
+.plan__secondary{
+    color:white;
+    background-color: #f0795e;
+    padding:20px;
+    width:50%;
+}
