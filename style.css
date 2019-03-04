@@ -299,8 +299,7 @@ html {
  .plan__primary:hover, .plan__primary:focus{
    color:white;
    background-color:#f0795e;
-   position:relative;
-   bottom:30px;
+   transform:translateY(-20px);   /*koristi se uz hover*/
  }
  @media( max-width:800px){
   .plan__primary:hover, .plan__primary:focus{
@@ -324,14 +323,14 @@ html {
   background-color: #fff;
   color: #f0795e;
   margin-top: 20px;
-  padding: 10px 125px;
+  width:100%;
   font-size: 0.6875rem;
   border: 2px solid #f0795e;
 }
 @media (max-width: 800px){
   .pricing__button{
     padding:10px 0;
-    width:265px;
+    width:100%;
   }
 }
 .plan__secondary {
@@ -345,8 +344,7 @@ html {
 .plan__secondary:hover, .plan__secondary:focus{
   color:white;
   background-color:#f0795e;
-  position:relative;
-  bottom:30px;
+  transform:translateY(-20px);
 }
 @media (max-width: 800px){
   .plan__secondary{
