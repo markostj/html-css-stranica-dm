@@ -201,6 +201,11 @@ html {
   border: 3px solid #fff;
   position: relative;
 }
+@media (max-width: 800px){
+  .testimonials__content{
+    width:300px;
+  }
+}
 .testimonials__title {
   font-size: 2rem;
   margin-block-start: 0;
@@ -337,7 +342,8 @@ html {
     flex-direction: column;
     align-items:center;
   }
-  .download__google {
+  .download__google  {
+    margin-top:10px;
     padding-left: 0px;
                 /*uopce ne mijenja prema querisima*/
     width:100px;
@@ -364,6 +370,25 @@ html {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:800px){
+  .footer .wrapper{
+    padding:20px;
+    flex-direction: column;
+  }
+  .footer__information{
+    flex-direction: column;
+  }
+  .footer__app + .footer__app {/*zasto nece*/
+    margin-left: 0; /*ovo*/
+    margin-top:20px;
+  }
+  .footer__title{
+    padding-bottom: 5px;
+  }
+  .footer__copiright{
+    margin-top:20px;
+  }
+}
 .footer__information {
   display: flex;
 }
@@ -378,5 +403,5 @@ html {
   margin-left: 40px;
 }
 .footer__icon + .footer__icon{
-  padding-left:10px;
+  padding-left:15px;
 }
