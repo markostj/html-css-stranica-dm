@@ -296,6 +296,17 @@ html {
      width:100%;
    }
  }
+ .plan__primary:hover, .plan__primary:focus{
+   color:white;
+   background-color:#f0795e;
+   position:relative;
+   bottom:30px;
+ }
+ @media( max-width:800px){
+  .plan__primary:hover, .plan__primary:focus{
+    position:static;
+  }
+ }
 .plan__title {
   display: flex;
   justify-content: space-between;
@@ -324,22 +335,28 @@ html {
   }
 }
 .plan__secondary {
-  position: absolute;
-  right: 0;
-  top: 100px;
-  color: white;
-  background-color: #f0795e;
+  color: grey;
+  background-color: white;
   padding: 20px;
   width: 48%;
-  margin-left: 20px;
   margin-bottom: 20px;
+  margin-left:20px;
+}
+.plan__secondary:hover, .plan__secondary:focus{
+  color:white;
+  background-color:#f0795e;
+  position:relative;
+  bottom:30px;
 }
 @media (max-width: 800px){
   .plan__secondary{
     width:100%;
     margin:0px;
     position:relative;
-    top:0;          /*pogledat zasto prelazi tekst u novi red*/
+    top:0;         
+  }
+  .plan__secondary:hover, .plan__secondary:focus{
+    position:static;
   }
 }
 .plan__primary p,
