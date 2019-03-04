@@ -36,6 +36,12 @@ html {
   list-style-type: none;
   padding-inline-start: 0px;
 }
+@media(max-width:800px){
+  .nav__list{
+    display:none;
+  }
+  
+}
 .nav__link {
   text-decoration: none;
   padding: 0px 30px;
@@ -69,6 +75,12 @@ html {
 .hero__content .button + .button {
   margin-left: 20px;
 }
+@media(max-width:800px){
+  .hero__content .button + .button {
+    margin-left: 0px;
+    margin-top:20px;
+  }
+}
 
 
 
@@ -84,6 +96,22 @@ html {
 .introduction__text {
   padding-right: 100px;
   padding-top: 50px;
+}
+@media(max-width:800px)
+{
+  .introduction .wrapper{
+    height:600px;
+    display:flex;
+    flex-direction: column;
+  }
+  .introduction__text{
+    width:100%;
+    padding:0 20px;
+  }
+  .introduction__pic{
+    position:absolute;
+    top:0;
+  }
 }
 .introduction__title {
   font-size: 2rem;
@@ -126,6 +154,17 @@ html {
 .content__paragraph {
   color: grey;
   font-size: 0.8125rem;
+}
+@media(max-width:800px)
+{
+  .features__title{
+    text-align:center;
+    font-size:1.5rem;
+    padding-top:40px;
+  }
+  .features__content{
+    width:100%;
+  }
 }
 
 
