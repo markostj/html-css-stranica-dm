@@ -8,6 +8,8 @@ html {
   font-size: 16px;
 }
 
+
+
 .hero {
   display: flex;
   position: relative;
@@ -75,13 +77,13 @@ html {
   max-width: 800px;
 }
 .introduction .wrapper {
- height:400px;
+  height: 400px;
   display: flex;
   justify-content: space-between;
 }
 .introduction__text {
   padding-right: 100px;
-  padding-top:50px;
+  padding-top: 50px;
 }
 .introduction__title {
   font-size: 2rem;
@@ -92,10 +94,11 @@ html {
 }
 .introduction__pic {
   max-height: 400px;
-  position:relative;
-  right:0;
-  bottom:-85px;
+  position: relative;
+  right: 0;
+  bottom: -85px;
 }
+
 
 
 
@@ -127,106 +130,184 @@ html {
 
 
 
-.testimonials{
-    height:500px;
-    background-image:url("assets/reviews_visual.jpg");
-    background-size:cover;
-    color:#fff;
-    text-align: center;
-    padding-top:150px;
+
+.testimonials {
+  height: 500px;
+  background-image: url("assets/reviews_visual.jpg");
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding-top: 150px;
 }
-.testimonials__content{
-    width:400px;
-    margin:0 auto;
-    border:3px solid #fff;
-    position:relative;
+.testimonials__content {
+  width: 400px;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  position: relative;
 }
-.testimonials__title{
-    font-size:2rem;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-bottom: 50px;
+.testimonials__title {
+  font-size: 2rem;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-bottom: 50px;
 }
-.testimonials__name{
-    padding-top:20px;
-    font-size:1rem;
+.testimonials__name {
+  padding-top: 20px;
+  font-size: 1rem;
 }
-.testimonials__paragraph{
-    color:grey;
-    padding:0 30px;
+.testimonials__paragraph {
+  color: grey;
+  padding: 0 30px;
 }
-.testimonials__icon{
-    height:15px;
-    
+.testimonials__icon {
+  height: 15px;
 }
-.testimonials__icon + .testimonials__icon{
-    padding-left:10px;
+.testimonials__icon + .testimonials__icon {
+  padding-left: 10px;
 }
-.testimonials__picture{
-    position: absolute;
-    transform:translateX(-50%);
-    top:-25px;
-    width:50px;
-    height:50px;
-    border:3px solid #fff;
-    border-radius:30px;
+.testimonials__picture {
+  position: absolute;
+  transform: translateX(-50%);
+  top: -25px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fff;
+  border-radius: 30px;
 }
 
 
 
 
-.pricing{
-    background-color:#f9f6ef;
+.pricing {
+  padding-top: 100px;
+  background-color: #f9f6ef;
 }
-.pricing .wrapper{
-    display:flex;
-    flex-wrap: wrap;
+.pricing .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
-.pricing__heading{
-    font-size: 2rem;
-    width:50%;
+.pricing__heading {
+  font-size: 2rem;
+  width: 50%;
 }
-.pricing__paragraph{
-    color:grey;
-    width:50%;
+.pricing__paragraph {
+  color: grey;
+  font-size: 0.75rem;
+  width: 50%;
+  margin: 26px 0;
 }
-.plan__primary{
-    color:grey;
-    background-color: white;
-    padding:20px;
-    width:50%;
+.plan__primary {
+  color: grey;
+  background-color: white;
+  padding: 20px;
+  width: 48%;
+  margin-bottom: 20px;
 }
-.plan__title{
-    display:flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(221, 217, 217);
+.plan__title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(221, 217, 217);
 }
-.plan__heading{
-    font-weight: normal;
+.plan__heading {
+  font-weight: normal;
 }
-.plan__price{
-    font-size:1.5rem;
-    font-weight:bold;
-    color:rgb(77, 75, 75);
+.plan__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(77, 75, 75);
 }
-.bold{
-    display:inline-block;
-    font-weight:bold;
-    margin:0px;
+.bold {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0px;
 }
-.pricing__button{
-    background-color:#fff;
-    color:#f0795e;
-    margin-top: 20px;
-    padding:10px 150px;
-    font-size:0.6875rem;
+.pricing__button {
+  background-color: #fff;
+  color: #f0795e;
+  margin-top: 20px;
+  padding: 10px 125px;
+  font-size: 0.6875rem;
+  border: 2px solid #f0795e;
 }
-.pricing__primary{
-    border:2px solid #f0795e;
+.plan__secondary {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  color: white;
+  background-color: #f0795e;
+  padding: 20px;
+  width: 48%;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
-.plan__secondary{
-    color:white;
-    background-color: #f0795e;
-    padding:20px;
-    width:50%;
+.plan__primary p,
+.plan__secondary p {
+  display: inline-block;
+}
+
+
+
+
+.download {
+  height: 400px;
+  background-color: #f0795e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.download__box {
+  width: 300px;
+}
+.download__title {
+  text-align: center;
+  font-size: 2rem;
+}
+.download__paragraph {
+  text-align: center;
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+.download__links {
+  display: flex;
+  justify-content: center;
+}
+.download__appstore {
+  width: 100px;
+  height: 35px;
+}
+.download__google {
+  padding-left: 20px;
+  width: 120px;
+  height: 35px;
+}
+
+
+
+
+.footer {
+  color: grey;
+  font-size: 0.5625rem;
+}
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__information {
+  display: flex;
+}
+.footer__title {
+  font-weight: bold;
+}
+.footer__link {
+  color: #f0795e;
+  text-decoration: none;
+}
+.footer__app + .footer__app {
+  margin-left: 40px;
+}
+.footer__icon + .footer__icon{
+  padding-left:10px;
 }
