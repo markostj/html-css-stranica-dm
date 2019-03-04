@@ -247,7 +247,7 @@ html {
 @media (max-width:800px){
   .pricing{
     padding-top:0; 
-    height:800px; 
+    height:1100px; 
   }
 }
 .pricing .wrapper {
@@ -324,7 +324,7 @@ html {
 @media (max-width: 800px){
   .pricing__button{
     padding:10px 0;
-    width:300px;
+    width:265px;
   }
 }
 .plan__secondary {
@@ -341,7 +341,9 @@ html {
 @media (max-width: 800px){
   .plan__secondary{
     width:100%;
-    margin:20px;
+    margin:0px;
+    position:relative;
+    top:0;          /*pogledat zasto prelazi tekst u novi red*/
   }
 }
 .plan__primary p,
@@ -382,12 +384,6 @@ html {
     flex-direction: column;
     align-items:center;
   }
-  .download__google  {
-    margin-top:10px;
-    padding-left: 20;
-                /*uopce ne mijenja prema querisima*/
-    width:100px;
-  }
 }
 .download__appstore {
   width: 100px;
@@ -397,6 +393,14 @@ html {
   padding-left: 20px;
   width: 120px;
   height: 35px;
+}
+@media (max-width: 800px){
+  .download__google{
+    padding-left:0;
+    padding-top:10px;
+    width:100px;
+    height:45px;
+  }
 }
 
 
@@ -410,17 +414,13 @@ html {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width:800px){
+@media (max-width: 800px){
   .footer .wrapper{
     padding:20px;
     flex-direction: column;
   }
   .footer__information{
     flex-direction: column;
-  }
-  .footer__app + .footer__app {/*zasto nece*/
-    margin-left: 0; /*ovo*/
-    margin-top:20px;
   }
   .footer__title{
     padding-bottom: 5px;
@@ -441,6 +441,12 @@ html {
 }
 .footer__app + .footer__app {
   margin-left: 40px;
+}
+@media (max-width: 800px){
+  .footer__app + .footer__app{
+    margin-left:0;
+    margin-top:20px;
+  }
 }
 .footer__icon + .footer__icon{
   padding-left:15px;
