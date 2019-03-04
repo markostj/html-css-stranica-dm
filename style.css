@@ -155,15 +155,32 @@ html {
   color: grey;
   font-size: 0.8125rem;
 }
-@media(max-width:800px)
+@media(max-width:800px)  /*ne mijenja queryje*/
 {
   .features__title{
     text-align:center;
     font-size:1.5rem;
     padding-top:40px;
   }
+  .features__main{
+    flex-direction: column;
+    padding:0 20px;
+  }
   .features__content{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
     width:100%;
+  }
+  .features__content + .features__content {
+    margin-left: 0px;
+  }
+  .content__title{
+    margin-bottom:10px;
+  }
+  .content__paragraph{
+    text-align: center;
   }
 }
 
@@ -220,12 +237,14 @@ html {
 .pricing {
   padding-top: 100px;
   background-color: #f9f6ef;
+  height:800px;
 }
 .pricing .wrapper {
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
+
 .pricing__heading {
   font-size: 2rem;
   width: 50%;
@@ -312,6 +331,17 @@ html {
 .download__links {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 800px){
+  .download__links{
+    flex-direction: column;
+    align-items:center;
+  }
+  .download__google {
+    padding-left: 0px;
+                /*uopce ne mijenja prema querisima*/
+    width:100px;
+  }
 }
 .download__appstore {
   width: 100px;
