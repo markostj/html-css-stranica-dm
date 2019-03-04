@@ -34,7 +34,7 @@ html {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  padding-inline-start: 0px;
+  padding-inline-start: 0;
 }
 @media(max-width:800px){
   .nav__list{
@@ -44,7 +44,7 @@ html {
 }
 .nav__link {
   text-decoration: none;
-  padding: 0px 30px;
+  padding: 20px 30px;
   color: white;
   text-transform: uppercase;
   font-size: 0.6125rem;
@@ -77,7 +77,7 @@ html {
 }
 @media(max-width:800px){
   .hero__content .button + .button {
-    margin-left: 0px;
+    margin-left: 0;
     margin-top:20px;
   }
 }
@@ -155,7 +155,7 @@ html {
   color: grey;
   font-size: 0.8125rem;
 }
-@media(max-width:800px)  /*ne mijenja queryje*/
+@media(max-width:800px)  
 {
   .features__title{
     text-align:center;
@@ -174,7 +174,7 @@ html {
     width:100%;
   }
   .features__content + .features__content {
-    margin-left: 0px;
+    margin-left: 0;
   }
   .content__title{
     margin-bottom:10px;
@@ -242,23 +242,47 @@ html {
 .pricing {
   padding-top: 100px;
   background-color: #f9f6ef;
-  height:800px;
+  height:600px;
+}
+@media (max-width:800px){
+  .pricing{
+    padding-top:0; 
+    height:800px; 
+  }
 }
 .pricing .wrapper {
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
+@media (max-width: 800px){
+  .pricing .wrapper{
+    padding:20px;
+    flex-direction: column;
+  }
+}
 
 .pricing__heading {
   font-size: 2rem;
   width: 50%;
+}
+@media (max-width: 800px){
+  .pricing__heading{
+    width:100%;
+    margin-bottom: 0;
+  }
 }
 .pricing__paragraph {
   color: grey;
   font-size: 0.75rem;
   width: 50%;
   margin: 26px 0;
+}
+@media (max-width: 800px){
+  .pricing__paragraph{
+    font-size:1rem;
+    width:100%;
+  }
 }
 .plan__primary {
   color: grey;
@@ -267,6 +291,11 @@ html {
   width: 48%;
   margin-bottom: 20px;
 }
+ @media (max-width:800px){
+   .plan__primary{
+     width:100%;
+   }
+ }
 .plan__title {
   display: flex;
   justify-content: space-between;
@@ -283,7 +312,6 @@ html {
 .bold {
   display: inline-block;
   font-weight: bold;
-  margin: 0px;
 }
 .pricing__button {
   background-color: #fff;
@@ -292,6 +320,12 @@ html {
   padding: 10px 125px;
   font-size: 0.6875rem;
   border: 2px solid #f0795e;
+}
+@media (max-width: 800px){
+  .pricing__button{
+    padding:10px 0;
+    width:300px;
+  }
 }
 .plan__secondary {
   position: absolute;
@@ -303,6 +337,12 @@ html {
   width: 48%;
   margin-left: 20px;
   margin-bottom: 20px;
+}
+@media (max-width: 800px){
+  .plan__secondary{
+    width:100%;
+    margin:20px;
+  }
 }
 .plan__primary p,
 .plan__secondary p {
@@ -344,7 +384,7 @@ html {
   }
   .download__google  {
     margin-top:10px;
-    padding-left: 0px;
+    padding-left: 20;
                 /*uopce ne mijenja prema querisima*/
     width:100px;
   }
