@@ -3,6 +3,7 @@
 }
 .body {
   margin: 0;
+  font-family: 'Zilla Slab', serif;
 }
 html {
   font-size: 16px;
@@ -25,10 +26,20 @@ html {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  padding: 10px 30px;
+  padding: 20px 30px;
   top: 0;
   left: 0;
   width: 100%;
+}
+@media (max-width: 800px){
+  .header{
+    left:50%;
+    transform: translateX(-50%);
+    width:50%;
+  }
+  .header__logo{
+    margin:0 auto;
+  }
 }
 .nav__list {
   display: flex;
@@ -36,11 +47,10 @@ html {
   list-style-type: none;
   padding-inline-start: 0;
 }
-@media(max-width:800px){
-  .nav__list{
-    display:none;
+@media (max-width: 800px) {
+  .nav__list {
+    display: none;
   }
-  
 }
 .nav__link {
   text-decoration: none;
@@ -75,12 +85,13 @@ html {
 .hero__content .button + .button {
   margin-left: 20px;
 }
-@media(max-width:800px){
+@media (max-width: 800px) {
   .hero__content .button + .button {
     margin-left: 0;
-    margin-top:20px;
+    margin-top: 20px;
   }
 }
+
 
 
 
@@ -88,7 +99,7 @@ html {
   margin: 0 auto;
   max-width: 800px;
 }
-.introduction .wrapper {
+#introduction .wrapper {
   height: 400px;
   display: flex;
   justify-content: space-between;
@@ -97,20 +108,19 @@ html {
   padding-right: 100px;
   padding-top: 50px;
 }
-@media(max-width:800px)
-{
-  .introduction .wrapper{
-    height:600px;
-    display:flex;
+@media (max-width: 800px) {
+  #introduction .wrapper {
+    height: 600px;
+    display: flex;
     flex-direction: column;
   }
-  .introduction__text{
-    width:100%;
-    padding:0 20px;
+  .introduction__text {
+    width: 100%;
+    padding: 0 20px;
   }
-  .introduction__pic{
-    position:absolute;
-    top:0;
+  .introduction__pic {
+    position: absolute;
+    top: 0;
   }
 }
 .introduction__title {
@@ -130,7 +140,8 @@ html {
 
 
 
-.features {
+
+#features {
   background-color: #f9f6ef;
   padding-top: 60px;
 }
@@ -155,31 +166,30 @@ html {
   color: grey;
   font-size: 0.8125rem;
 }
-@media(max-width:800px)  
-{
-  .features__title{
-    text-align:center;
-    font-size:1.5rem;
-    padding-top:40px;
+@media (max-width: 800px) {
+  .features__title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 40px;
   }
-  .features__main{
+  .features__main {
     flex-direction: column;
-    padding:0 20px;
+    padding: 0 20px;
   }
-  .features__content{
-    display:flex;
-    flex-direction:column;
+  .features__content {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:100%;
+    width: 100%;
   }
   .features__content + .features__content {
     margin-left: 0;
   }
-  .content__title{
-    margin-bottom:10px;
+  .content__title {
+    margin-bottom: 10px;
   }
-  .content__paragraph{
+  .content__paragraph {
     text-align: center;
   }
 }
@@ -187,7 +197,8 @@ html {
 
 
 
-.testimonials {
+
+#testimonials {
   height: 500px;
   background-image: url("assets/reviews_visual.jpg");
   background-size: cover;
@@ -201,9 +212,9 @@ html {
   border: 3px solid #fff;
   position: relative;
 }
-@media (max-width: 800px){
-  .testimonials__content{
-    width:300px;
+@media (max-width: 800px) {
+  .testimonials__content {
+    width: 300px;
   }
 }
 .testimonials__title {
@@ -239,25 +250,36 @@ html {
 
 
 
-.pricing {
+
+#pricing {
   padding-top: 100px;
   background-color: #f9f6ef;
-  height:600px;
+  height: 600px;
 }
-@media (max-width:800px){
-  .pricing{
-    padding-top:0; 
-    height:1100px; 
+@media (max-width: 800px) {
+  #pricing {
+    padding-top: 0;
+    height: 800px;
   }
 }
-.pricing .wrapper {
+@media (max-width: 530px){
+  #pricing{
+    height:950px;
+  }
+}
+@media (max-width: 400px){
+  #pricing{
+    height:1050px;
+  }
+}
+#pricing .wrapper {
   display: flex;
   flex-wrap: wrap;
   position: relative;
 }
-@media (max-width: 800px){
-  .pricing .wrapper{
-    padding:20px;
+@media (max-width: 800px) {
+  #pricing .wrapper {
+    padding: 20px;
     flex-direction: column;
   }
 }
@@ -266,9 +288,9 @@ html {
   font-size: 2rem;
   width: 50%;
 }
-@media (max-width: 800px){
-  .pricing__heading{
-    width:100%;
+@media (max-width: 800px) {
+  .pricing__heading {
+    width: 100%;
     margin-bottom: 0;
   }
 }
@@ -278,10 +300,10 @@ html {
   width: 50%;
   margin: 26px 0;
 }
-@media (max-width: 800px){
-  .pricing__paragraph{
-    font-size:1rem;
-    width:100%;
+@media (max-width: 800px) {
+  .pricing__paragraph {
+    font-size: 1rem;
+    width: 100%;
   }
 }
 .plan__primary {
@@ -291,21 +313,23 @@ html {
   width: 48%;
   margin-bottom: 20px;
 }
- @media (max-width:800px){
-   .plan__primary{
-     width:100%;
-   }
- }
- .plan__primary:hover, .plan__primary:focus{
-   color:white;
-   background-color:#f0795e;
-   transform:translateY(-20px);   /*koristi se uz hover*/
- }
- @media( max-width:800px){
-  .plan__primary:hover, .plan__primary:focus{
-    position:static;
+@media (max-width: 800px) {
+  .plan__primary {
+    width: 100%;
   }
- }
+}
+.plan__primary:hover,
+.plan__primary:focus {
+  color: white;
+  background-color: #f0795e;
+  transform: translateY(-20px); /*koristi se uz hover*/
+}
+@media (max-width: 800px) {
+  .plan__primary:hover,
+  .plan__primary:focus {
+    position: static;
+  }
+}
 .plan__title {
   display: flex;
   justify-content: space-between;
@@ -323,14 +347,14 @@ html {
   background-color: #fff;
   color: #f0795e;
   margin-top: 20px;
-  width:100%;
+  width: 100%;
   font-size: 0.6875rem;
   border: 2px solid #f0795e;
 }
-@media (max-width: 800px){
-  .pricing__button{
-    padding:10px 0;
-    width:100%;
+@media (max-width: 800px) {
+  .pricing__button {
+    padding: 10px 0;
+    width: 100%;
   }
 }
 .plan__secondary {
@@ -339,22 +363,24 @@ html {
   padding: 20px;
   width: 48%;
   margin-bottom: 20px;
-  margin-left:20px;
+  margin-left: 20px;
 }
-.plan__secondary:hover, .plan__secondary:focus{
-  color:white;
-  background-color:#f0795e;
-  transform:translateY(-20px);
+.plan__secondary:hover,
+.plan__secondary:focus {
+  color: white;
+  background-color: #f0795e;
+  transform: translateY(-20px);
 }
-@media (max-width: 800px){
-  .plan__secondary{
-    width:100%;
-    margin:0px;
-    position:relative;
-    top:0;         
+@media (max-width: 800px) {
+  .plan__secondary {
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    top: 0;
   }
-  .plan__secondary:hover, .plan__secondary:focus{
-    position:static;
+  .plan__secondary:hover,
+  .plan__secondary:focus {
+    position: static;
   }
 }
 .plan__primary p,
@@ -365,7 +391,7 @@ html {
 
 
 
-.download {
+#download {
   height: 400px;
   background-color: #f0795e;
   color: #fff;
@@ -390,10 +416,10 @@ html {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 800px){
-  .download__links{
+@media (max-width: 800px) {
+  .download__links {
     flex-direction: column;
-    align-items:center;
+    align-items: center;
   }
 }
 .download__appstore {
@@ -405,14 +431,15 @@ html {
   width: 120px;
   height: 35px;
 }
-@media (max-width: 800px){
-  .download__google{
-    padding-left:0;
-    padding-top:10px;
-    width:100px;
-    height:45px;
+@media (max-width: 800px) {
+  .download__google {
+    padding-left: 0;
+    padding-top: 10px;
+    width: 100px;
+    height: 45px;
   }
 }
+
 
 
 
@@ -425,19 +452,19 @@ html {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 800px){
-  .footer .wrapper{
-    padding:20px;
+@media (max-width: 800px) {
+  .footer .wrapper {
+    padding: 20px;
     flex-direction: column;
   }
-  .footer__information{
+  .footer__information {
     flex-direction: column;
   }
-  .footer__title{
+  .footer__title {
     padding-bottom: 5px;
   }
-  .footer__copiright{
-    margin-top:20px;
+  .footer__copiright {
+    margin-top: 20px;
   }
 }
 .footer__information {
@@ -453,12 +480,12 @@ html {
 .footer__app + .footer__app {
   margin-left: 40px;
 }
-@media (max-width: 800px){
-  .footer__app + .footer__app{
-    margin-left:0;
-    margin-top:20px;
+@media (max-width: 800px) {
+  .footer__app + .footer__app {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
-.footer__icon + .footer__icon{
-  padding-left:15px;
+.footer__icon + .footer__icon {
+  padding-left: 15px;
 }
