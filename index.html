@@ -26,6 +26,9 @@
               </li>
               <li><a class="nav__link" href="#pricing">Pricing</a></li>
               <li><a class="nav__link" href="#download">Download</a></li>
+              <li> <button  onclick="toggleLoginModal()" class="button hero__button__primary nav__button">Login</button></li>
+              <li><button  onclick="toggleRegisterModal()" class="button hero__button__primary nav__button ">Registracija</button></li>
+            
             </ul>
           </nav>
         </header>
@@ -257,5 +260,56 @@
         </p>
       </div>
     </footer>
+    <!--Modal comes here-->
+    <div class="modal modal__login">
+      <form class="modal__form" >
+          <button onclick="toggleLoginModal()" type="button"> X</button>
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Unesite korisničko ime" >
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Unesite password" >
+          <button type="submit">Submit</button>
+          <button type="button">Forgot password</button>
+          <button onclick="switchModal()" type="button">Register</button>
+
+    </form>
+  </div>
+  <div class="modal modal__registration">
+      <form class="modal__form" >
+          <button onclick="toggleRegisterModal()" type="button"> X</button>
+          <label for="usernameLog">Username</label>
+          <input type="text" id="usernameLog" placeholder="Unesite korisničko ime" >
+          <label for="passwordLog">Password</label>
+          <input type="password" id="passwordLog" placeholder="Unesite password" >
+          <label for="AgainPassword">Unesite ponovno password</label>
+          <input type="password" id="Againpassword" placeholder="Unesite password" >
+          <button type="submit">Submit</button>
+
+
+    </form>
+
+  </div>
   </body>
+ <!--JS here-->
+  <script>
+    function toggleLoginModal() {
+      const modalElementList = document.getElementsByClassName("modal__login");
+      const modalElement= modalElementList[0];
+      modalElement.classList.toggle('is-visible'); //za dodavanje i brisanje je toggle
+      
+    }
+
+    function toggleRegisterModal() {
+      const modalElementList = document.getElementsByClassName("modal__registration");
+      const modalElement= modalElementList[0];
+      modalElement.classList.toggle('is-visible');
+    }
+    function switchModal() {
+      const modalElementList = document.getElementsByClassName("modal");
+      
+        
+      //pogledat kod 
+      //proba za git
+    }
+ </script>
 </html>

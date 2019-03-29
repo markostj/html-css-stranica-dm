@@ -82,6 +82,9 @@ html {
   border: 1px solid #fff;
   width: 128px;
 }
+.nav__button {
+  margin-left:20px;
+}
 .hero__content .button + .button {
   margin-left: 20px;
 }
@@ -488,4 +491,28 @@ html {
 }
 .footer__icon + .footer__icon {
   padding-left: 15px;
+}
+
+/*modal*/
+.modal{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  visibility:hidden;
+  position:fixed;
+  height:100%;
+  top:0;
+  left:50%;
+  transform: translateX(-50%);
+  
+}
+.is-visible{
+  visibility:visible;
+}
+.modal__form{
+  display:flex;
+  flex-direction: column;
+  position:relative;
+  background-color:#fff;
+  
 }
